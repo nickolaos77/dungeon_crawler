@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>React Game of Life</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <style>
+    html {
+      height: 100vh;
+    }
+    
+    body {
+      margin: 0;
+      height: 100%;
+      background: radial-gradient(#cc4444, #111111);
+      display: flex;
+      flex-direction: column;
+    }
+    
+    
+    #app {
+      width: 90%;
+      margin: auto;
+      /*          background: red;*/
+      margin-top: 100px;
+      margin-bottom: 50px;
+    }
+    
+    span {
+      height: 30px;
+      margin: 5px;
+      display: inline-block;
+    }
+    
+    .marginLeft20 {
+      margin-left: 20px;
+    }
+    
+    .noTopMargin {
+      margin-top: 0;
+    }
+    
+    .textColor {
+      color: #bbb;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+    }
+    
+    #boardAndLivingCellsContainer{
+      width: 600px;
+      height: 360px;
+      margin: auto;
+      position: relative;
+     
+  }
+
+
+    
+     #boardSmall {
+      width: 600px;
+      height: 360px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      border: 7px solid #333;
+      border-radius: 10px;
+      position: relative; 
+    }    
+    
+    .squareSmall {
+      width: 10px;
+      height: 10px;
+      box-sizing: border-box;
+      background: black;
+      border-left: 1px solid #333;
+      border-top: 1px solid #333;
+    }    
+    
+
+    .square {
+      width: 12px;
+      height: 12px;
+      box-sizing: border-box;
+      background: grey;
+/*
+      border-left: 1px solid #333;
+      border-top: 1px solid #333;
+*/
+    }
+    
+    .wall{
+      background: white;
+    }
+    
+    .heroCell{
+      position: absolute;
+      background: blue;
+    }
+    
+    .blackIcon{
+      width :60px;
+      height:36px;
+      position:absolute;
+      background: black;
+    }
+    
+    .magicPotion{
+      background: green;
+    }
+    
+    .weakEnemy{
+      background: pink;
+    }
+    
+    .strongEnemy{
+      background: orangered;
+    }
+    .excalibur{
+      background: blue;
+    }
+    
+    .boss{
+      background: red;
+    }
+    
+    .red {
+      background: red;
+    }
+    
+    .hidden{
+      background:black;
+    }
+    #text{
+      color:white;
+    }
+    #bottomButtons {
+      width: 500px;
+      height: 70px;
+      margin: auto;
+      margin-top:40px;
+      background: #333;
+      border-radius: 10px;
+    }
+    
+    .buttonBottom {
+      background: black;
+      color: #ddd;
+      height: 25px;
+      width: 105px;
+      margin: 5px;
+      border-radius: 3px;
+      font-size: 15px;
+    }
+    
+    #bottomText {
+      width: 500px;
+      height: 60px;
+      margin: auto;
+      background: #333;
+      border-radius: 10px;
+      margin-top: 10px;
+      padding-top: 7px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="titleBar">ReactJS Game of Life (click to learn more)</div>
+  <div id="app">
+  </div>
+      <script src="bundle.js"></script>
+</body>
+
+</html>

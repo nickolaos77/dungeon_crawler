@@ -1,0 +1,6 @@
+If I want to connect my component to redux but I don't care for the state I write:
+module.exports = connect()(MyComponent);
+
+To use variables that I define inside a stateful class component I use the specific components state.
+
+The remaining work I have to do to this app is to activate the board size selection buttons, test the components with Mocha and Chai, test the coverage with jasmine. Trigure the board initialization after the board has mounted and create only one github repo for the app. 
